@@ -12,9 +12,54 @@
 </head>
 
 <body>
-  <form action="respuesta.php" method="GET">
-      <imput type="text" name="nombre">
-  <table>
+  <form action="respuesta.php" method="POST">
+      <!--Pra introducir texto-->
+      <label for="nombre">Nombre</label><input type="text" name="Nombre">
+
+      <!--CheckBox-->
+      <p><input type="Checkbox" name="aceptar"> <label
+      for="aceptar">Acepto los terminos</label></p>
+
+      <!--Radio button-->
+
+      <p>Ciclos</p>
+        <p><input type="radio" name="ciclos" value="ASIR"><label
+        for="ciclos">Administracion de Sistemas informaticos y Redes</label></p>
+        <p><input type="radio" name="ciclos" value="DAW"><label
+        for="ciclos">Desarrollo de aplicaciones web.</label></p>
+        <p><input type="radio" name="ciclos" value="DAM"><label
+        for="ciclos">Desarrollo de aplicaciones plataforma.</label></p>
+
+       <!--Menu despegable-->
+       <p><label>Intereses</label></p>
+       <select name="intereses">
+           <option>Deporte</option>
+           <option>Musica</option>
+           <option>Cultura</option>
+           <option>Juegos</option>
+       </select> 
+
+       <!--Menu scroll-->
+       <p><label for="intereses2[]">Intereses2</label></p>
+       <select name="intereses2[]" size="4" multiple>
+           <option>Deporte</option>
+           <option>Musica</option>
+           <option>Cultura</option>
+           <option>Juegos</option>
+       </select> 
+
+       <!--Elemento oculto-->
+       <input type="hidden" name="id" value="4433">
+
+
+       <!--Imagen-->
+       <p><input type="image" name="dados" src="../img/dados/1.svg"></p>
+       
+    
+       <!--Boton de enviar-->
+       <p><input type="submit" name="enviar" value="Enviar"></p>
+
+        <table>
     <tbody>
 
     </tbody>
