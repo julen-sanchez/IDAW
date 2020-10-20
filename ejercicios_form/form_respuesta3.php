@@ -27,7 +27,7 @@ print "  <p class=\"aviso\"Añade código aquí</p>\n";
 
 ?>
 
-  <p><a href="formX.php">Volver al formulario.</a></p>
+  <p><a href="form3.php">Volver al formulario.</a></p>
 
   <footer>
     <p>Julen Sanchez Alonso</p>

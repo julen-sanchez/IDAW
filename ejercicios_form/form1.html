@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>
+    Controles en formularios
+    Julen Sanchez Alonso
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mclibre-php-ejercicios.css" title="Color">
+</head>
+
+<body>
+  <h1>Ejercicio con formularios 1</h1>
+
+  <form action="form_respuesta1.php" method="REQUEST">
+    <!--Pra introducir texto-->
+    <label for="tamaño">Tamaño</label><input type="text" name="tamaño">
+    
+    <p><label for="grosor">Grosor</label><input type="text" name="grosor"></p>
+
+
+    <p><label>Color</label></p>
+    <select name="intereses">
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="yellow">Amarillo</option>
+        <option value="green">Verde</option>
+    </select> 
+
+
+    <p>
+      <input type="submit" value="Enviar">
+    </p>
+  </form>
+
+  <footer>
+    <p>Julen Sanchez Alonso</p>
+  </footer>
+</body>
+</html>

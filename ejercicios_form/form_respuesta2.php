@@ -20,14 +20,18 @@
 
 <body>
   <h1>Ejercicio X</h1>
-
 <?php
 
-print "  <p class=\"aviso\"Añade código aquí</p>\n";
+if(isset($_REQUEST["fruta"])){
+  $fruta = $_REQUEST["fruta"];
+  print "<p><img src=\"img/frutas/$fruta.svg\" width='300' height='300'</p>";
+}
+
+
 
 ?>
 
-  <p><a href="formX.php">Volver al formulario.</a></p>
+  <p><a href="form2.php">Volver al formulario.</a></p>
 
   <footer>
     <p>Julen Sanchez Alonso</p>
