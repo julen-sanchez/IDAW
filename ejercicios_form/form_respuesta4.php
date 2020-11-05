@@ -22,8 +22,22 @@
   <h1>Ejercicio X</h1>
 
 <?php
+//El trim es para que no tenga espacios
+$nombre = trim($_REQUEST["nombre"]);
 
-print "  <p class=\"aviso\"Añade código aquí</p>\n";
+if($nombre == ""){
+  print "<p>Nombre no introducido.</p>\n";
+}else{
+    print "<p>Nombre: $_REQUEST[nombre]</p>\n";
+}
+
+$apellido = trim($_REQUEST["apellido"]);
+
+if($apellido == ""){
+  print "<p>Apellido no introducido.</p>\n";
+}else{
+    print "<p>Apellido: $_REQUEST[apellido]</p>\n";
+}
 
 ?>
 

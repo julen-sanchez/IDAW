@@ -23,7 +23,34 @@
 
 <?php
 
-print "  <p class=\"aviso\"Añade código aquí</p>\n";
+$temperatura = trim($_REQUEST['temperatura']);
+$unidad = ($_REQUEST['unidad']);
+$cambio=0;
+
+
+if($temperatura == ""){
+  print"<p>Sin valor</p>";
+}elseif(is_numeric($_REQUEST['temperatura'])){
+  print"<p>La temperatura es: $_REQUEST[temperatura] $_REQUEST[unidad]</p>";
+}else{
+  print "<p>Valor errorneo</p>";
+}
+
+
+if(($temperatura <= -273.15) && ($unidad =="celsius")){
+print"Número inválido";
+}elseif(($temperatura <= -459.67) && ($unidad=="fahrenheit")){
+  print"Número inválido";
+}elseif($unidad =="celsius"){
+  $cambio=1.8*$temperatura+32;
+  print"$cambio fahrenheit";
+}elseif($unidad =="fahrenheit"){
+  $cambio=($temperatura - 32) / 1.8;
+  print"$cambio celsius";
+}
+
+
+
 
 ?>
 

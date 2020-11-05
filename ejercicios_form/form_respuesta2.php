@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <h1>Ejercicio X</h1>
+  <h1>Ejercicio 2</h1>
 <?php
 
 if(isset($_REQUEST["fruta"])){

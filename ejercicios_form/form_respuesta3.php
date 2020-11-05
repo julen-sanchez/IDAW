@@ -19,11 +19,18 @@
 </head>
 
 <body>
-  <h1>Ejercicio X</h1>
+  <h1>Ejercicio 3</h1>
 
 <?php
 
-print "  <p class=\"aviso\"Añade código aquí</p>\n";
+
+$letra=$_REQUEST["letra"];
+$fondo=$_REQUEST["fondo"];
+
+print "<p>Los colores elegidos:</p>";
+print_r($_REQUEST); 
+print "<p style='color:$letra; background-color:$fondo; font-size:50px;'>Me olvidé de los consejos susurrados de tu boca...</p>";
+
 
 ?>
 
