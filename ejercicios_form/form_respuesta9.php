@@ -19,15 +19,29 @@
 </head>
 
 <body>
-  <h1>Ejercicio X</h1>
-
+  <h1>Ejercicio 9</h1>
+  <table>
 <?php
+$numero = trim($_REQUEST['numero']);
 
-print "  <p class=\"aviso\"Añade código aquí</p>\n";
 
+if($numero<=100 && $numero>=0){
+print "<table>";
+  for ($i=1; $i<=$numero; $i++) {
+    print "<tr>";
+    for ($j=1; $j<=$numero; $j++) {
+      $valor=$j*$i;
+      print "<td> $valor <td>";
+    }
+    print "</tr>";
+  }
+print "</table>";
+}else{
+  print"No has puesto un valor válido";
+}
 ?>
-
-  <p><a href="form9.php">Volver al formulario.</a></p>
+</table>
+  <p><a href="form9.html">Volver al formulario.</a></p>
 
   <footer>
     <p>Julen Sanchez Alonso</p>
