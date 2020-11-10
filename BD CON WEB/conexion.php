@@ -13,5 +13,5 @@ try {
     print "Conectado";
 } catch (PDOException $e){
     print "Error: ". $e-> getMessage()."<br/>";
-    die(); //Que no haga na mas
+    die(); //Que no haga nada más
 }

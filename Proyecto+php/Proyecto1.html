@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <script>
+        function inicio() {
+            var x = document.getElementById("texto");
+            x.innerHTML = "Antonio José Sánchez Mazuecos, conocido profesionalmente como Antonio José, es un cantante español. Desde pequeño se dedicó al mundo de la música, siendo apoyado activamente por su madre. En 2005, participó en el Junior Eurovision Song Contest 2005 con la canción Te traigo flores, obteniendo el segundo lugar ";
+            
+        }
+
+        function info() {
+            var x = document.getElementById("texto");
+            x.innerHTML = "Antonio José presenta una nueva canción y videoclip. Ando Perdido es un tema que fue compuesto durante su último viaje promocional a Latinoamérica en el que recorrió Colombia y Ecuador presentado su álbum Antídoto ";
+        }
+
+        function contacto() {
+            var x = document.getElementById("texto");
+            x.innerHTML = "Fecha de nacimiento: 2 de enero de 1995 (edad 25 años), Palma del Río";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-container1"><img src="images/aj.jpg" height="250px"> </img></div>
+        <div class="flex-container2"><p class="ajtexto">ANTONIO JOSÉ</p></div>
+    </div>
+    <div class="navbar">
+        <a href="" onclick='inicio()'>Inicio</a>
+        <a onclick='info()'>Novedades</a>
+        <div class="dropdown">
+            <button class="dropbtn">Info 
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div class="dropdown-content">
+                <a onclick='contacto()'>Extra</a>
+            </div>
+        </div>
+          <a href="Top canciones.html">Top canciones</a> 
+            <a href="formulario.html">Formulario</a> 
+    </div>
+    <div>
+        <br>
+        <br>
+        <p id="texto" style="color: #ddd;">Antonio José Sánchez Mazuecos, conocido profesionalmente como Antonio José, es un cantante español. Desde pequeño se dedicó al mundo de la música, siendo apoyado activamente por su madre. En 2005, participó en el Junior Eurovision Song Contest
+            2005 con la canción Te traigo flores, obteniendo el segundo lugar.</p>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fFTpqo78t30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <footer>AJ</footer>
+  
+</body>
+
+
+</html>
