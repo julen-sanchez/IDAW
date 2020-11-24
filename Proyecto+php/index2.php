@@ -91,15 +91,15 @@ if($_GET){
 
 <form action="edit2.php" method="GET">
     <input type="hidden" name="id" value="<?php  print $resultado_id['id']?>">
-    <p> <label for="cancion">Color</label>
+    <p> <label for="cancion">Canción</label>
         <input type="text" name="cancion" value="<?php  print $resultado_id['cancion']?>">
     </p>
-    <p> <label for="disco">Descripción</label>
+    <p> <label for="disco">Disco</label>
         <input type="text" name="disco" value="<?php  print $resultado_id['disco']?>">
     </p>
     <p><button>Editar</button></p>
 </form>
 <?php endif ?>
-<p><a href="top_canciones.html">Volver al formulario.</a></p>
+<p><a href="top_canciones.php">Añadir canción.</a></p>
 </body>
 </html>
